@@ -17,11 +17,11 @@ The main data source for OSINT Deck is the `public/resources.json` file. This fi
 
 #### Overall Structure
 
-The `resources.json` file contains a **single root JSON object**. This object represents the top-most category (e.g., "OSINT Deck Central") and must have `type: "folder"`. It contains a `children` array that holds its sub-categories or resource items.
+The `resources.json` file contains a **single root JSON object**. This object represents the top-most category ("OSINT Deck Central") and must have `type: "folder"`. It contains a `children` array that holds its sub-categories or resource items.
 
 ```json
 {
-  "name": "OSINT Resources",
+  "name": "OSINT Deck Central",
   "type": "folder",
   "children": [
     {  },
