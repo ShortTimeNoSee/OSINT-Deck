@@ -1,6 +1,6 @@
 # OSINT Deck
 
-Welcome to OSINT Deck! This project aims to be a comprehensive, community-driven directory of Open Source Intelligence (OSINT) tools and resources, presented in an easy-to-navigate "deck" format.
+Welcome to OSINT Deck! This project aims to be a comprehensive, community-driven directory of Open Source Intelligence (OSINT) tools and resources, presented in an easy-to-navigate format.
 
 ## How to Contribute
 
