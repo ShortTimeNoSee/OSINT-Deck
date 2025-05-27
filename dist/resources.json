@@ -1458,7 +1458,7 @@
         {
           "name": "ExifTool (T)",
           "type": "url",
-          "url": "http://exiftool.org",
+          "url": "https://exiftool.org/",
           "github": "https://github.com/exiftool/exiftool"
         },
         {
