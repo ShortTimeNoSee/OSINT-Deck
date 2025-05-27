@@ -1,0 +1,36 @@
+/* Default Cache and Security Headers */
+/* ================================= */
+/*
+  Cache-Control: public, max-age=2592000
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/* Specific File Type Headers */
+/* ========================== */
+/*.js
+  Content-Type: application/javascript
+  Cache-Control: public, max-age=2592000
+
+/*.css
+  Content-Type: text/css
+  Cache-Control: public, max-age=2592000
+
+/*.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=86400
+
+/*.webmanifest
+  Content-Type: application/manifest+json
+  Cache-Control: public, max-age=86400
+
+/* Specific Resource Caching */
+/* ========================= */
+/resources.json
+  Cache-Control: public, max-age=3600 /* Cache data for 1 hour */
+
+/* Security Header Considerations */
+/* ============================== */
+/* adding Content-Security-Policy eventually. Example (needs customization): */
+/* Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' osint-deck-backend.theedenwatcher.workers.dev; img-src 'self' data:; */

@@ -1,0 +1,31 @@
+{
+    "name": "OSINT Deck - Ultimate OSINT Tools Collection",
+    "short_name": "OSINT Deck",
+    "description": "Explore OSINT Deck, the ultimate evolving resource for open-source intelligence tools. Access and discover tools for digital investigations, social media analysis, domain research, and more.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#1a1f3c",
+    "theme_color": "#7289da",
+    "orientation": "portrait-primary",
+    "icons": [
+        { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+        { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
+        { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+        { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+        { "src": "/favicon-16x16.png", "sizes": "16x16", "type": "image/png" },
+        { "src": "/mstile-150x150.png", "sizes": "150x150", "type": "image/png" }
+    ],
+    "screenshots": [
+        { "src": "/screenshot1.png", "sizes": "640x480", "type": "image/png", "label": "Main Grid View" },
+        { "src": "/screenshot2.png", "sizes": "1280x720", "type": "image/png", "label": "Resource Details (Example)" },
+        { "src": "/screenshot3.png", "sizes": "1920x1080", "type": "image/png", "label": "Searching for Tools" }
+    ],
+    "categories": ["security", "developer tools", "productivity", "reference", "utilities"],
+    "keywords": [
+        "OSINT", "open source intelligence", "digital investigation", "cyber investigation", "tools", "resources", "directory", "social media analysis", "domain research", "security research", "threat intelligence"
+    ],
+    "lang": "en-US",
+    "related_applications": [],
+    "prefer_related_applications": false
+}
