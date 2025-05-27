@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "fuse.js": "^7.0.0",
-    "svelte": "^3.59.2"
+    "svelte": "^4.2.19"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
