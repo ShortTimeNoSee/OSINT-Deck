@@ -102,6 +102,15 @@
         "url": "https://thatsthem.com/reverse-email-lookup"
       },
       {
+        "name": "EPIEOS",
+        "type": "url",
+        "url": "https://epieos.com/",
+	"last_checked": "2025-05-29T17:49:00Z",
+	"platform": "web",
+	"cost": "Freemium",
+	"tags": ["email", "phone", "reverse search", "tool"]
+      },
+      {
         "name": "Hunter",
         "type": "url",
         "url": "https://hunter.io/"
