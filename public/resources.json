@@ -105,10 +105,10 @@
         "name": "EPIEOS",
         "type": "url",
         "url": "https://epieos.com/",
-	"last_checked": "2025-05-29T17:49:00Z",
-	"platform": "web",
-	"cost": "Freemium",
-	"tags": ["email", "phone", "reverse search", "tool"]
+	      "last_checked": "2025-05-29T17:49:00Z",
+	      "platform": "web",
+	      "cost": "Freemium",
+      	"tags": ["email", "phone", "reverse search", "tool"]
       },
       {
         "name": "Hunter",
@@ -119,6 +119,14 @@
         "name": "VoilaNorbert",
         "type": "url",
         "url": "https://www.voilanorbert.com/"
+      },
+      {
+        "name": "GitMails",
+        "type": "url",
+        "url": "https://github.com/bigyg1995/GitMails",
+        "last_checked": "2025-05-29T17:49:00Z",
+	      "platform": "cli",
+      	"tags": ["email", "GitHub", "tool"]
       },
       {
         "name": "GHunt (T)",
