@@ -93,7 +93,7 @@ Each Node Object can have the following properties:
   "tags": ["metadata", "exif", "command-line", "tool"],
   "status": "active",
   "cost": "open-source",
-  "platform": "cli",
+  "platform": "CLI",
   "last_checked": "2024-04-15T00:00:00Z",
   "github": "https://github.com/exiftool/exiftool"
 }

@@ -112,16 +112,16 @@
 
       <div class="resource-card-footer">
           <div class="resource-card-metadata">
-              {#if node.status}
-                  <span class="metadata-badge status-{node.status.toLowerCase()}" title="Status: {node.status}">
-                      <i class="fas {node.status === 'active' ? 'fa-check-circle' : node.status === 'deprecated' ? 'fa-times-circle' : 'fa-info-circle'}" aria-hidden="true"></i>
-                      {node.status}
-                  </span>
-              {/if}
               {#if node.cost}
                    <span class="metadata-badge cost-{node.cost.toLowerCase()}" title="Cost: {node.cost}">
                        <i class="fas {node.cost === 'free' ? 'fa-check-circle' : node.cost === 'paid' ? 'fa-dollar-sign' : 'fa-credit-card'}" aria-hidden="true"></i>
                        {node.cost}
+                  </span>
+              {/if}
+              {#if node.login_required && (node.login_required === true || node.login_required === 'yes' || node.login_required === 'y')}
+                   <span class="metadata-badge login-required" title="Login Required">
+                       <i class="fas fa-user-lock" aria-hidden="true"></i>
+                       Login Required
                   </span>
               {/if}
               {#if node.platform}

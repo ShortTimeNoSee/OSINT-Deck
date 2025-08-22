@@ -3,18 +3,18 @@
 
   export let isMobileOpen = false;
   export let activeFilters = {
-    status: [],
     cost: [],
     platform: [],
-    tags: []
+    tags: [],
+    login_required: []
   };
 
   const dispatch = createEventDispatcher();
 
   const filterOptions = {
-    status: ['Active', 'Deprecated'],
-    cost: ['Free', 'Paid', 'Freemium', 'Login Required'],
+    cost: ['Free', 'Paid', 'Freemium'],
     platform: ['Web', 'API', 'CLI'],
+    login_required: ['Yes', 'No']
   };
 
   let isFiltersExpanded = false;
@@ -123,9 +123,9 @@
                   />
                   <span class="filter-label">
                     <i class="fas {
-                      category === 'status' ? (option === 'Active' ? 'fa-check-circle' : 'fa-times-circle') :
                       category === 'cost' ? (option === 'Free' ? 'fa-check-circle' : option === 'Paid' ? 'fa-dollar-sign' : 'fa-credit-card') :
-                      category === 'platform' ? (option === 'Web' ? 'fa-globe' : option === 'API' ? 'fa-plug' : 'fa-desktop') : ''
+                      category === 'platform' ? (option === 'Web' ? 'fa-globe' : option === 'API' ? 'fa-plug' : 'fa-desktop') :
+                      category === 'login_required' ? (option === 'Yes' ? 'fa-user-lock' : 'fa-times-circle') : ''
                     }"></i>
                     {option}
                   </span>

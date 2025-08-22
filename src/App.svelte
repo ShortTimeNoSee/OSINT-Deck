@@ -38,10 +38,10 @@
   let resizeObserver;
 
   let activeFilters = {
-    status: [],
     cost: [],
     platform: [],
-    tags: []
+    tags: [],
+    login_required: []
   };
 
   $: currentItems = (() => {
@@ -54,10 +54,10 @@
   })();
 
   $: activeFilterState = {
-    status: activeFilters.status,
     cost: activeFilters.cost,
     platform: activeFilters.platform,
-    tags: activeFilters.tags
+    tags: activeFilters.tags,
+    login_required: activeFilters.login_required
   };
 
   $: filteredItems = (() => {
@@ -69,10 +69,10 @@
 
   function clearAllFilters() {
     activeFilters = {
-      status: [],
       cost: [],
       platform: [],
-      tags: []
+      tags: [],
+      login_required: []
     };
   }
 
@@ -164,9 +164,6 @@
     return items.filter(item => {
       if (item.node) item = item.node;
       if (item.type === 'folder') return true;
-      
-      const matchesStatus = activeFilters.status.length === 0 || 
-        (item.status && activeFilters.status.includes(item.status.toLowerCase()));
         
       const matchesCost = activeFilters.cost.length === 0 || 
         (item.cost && activeFilters.cost.includes(item.cost.toLowerCase()));
@@ -176,8 +173,17 @@
         
       const matchesTags = activeFilters.tags.length === 0 || 
         (item.tags && activeFilters.tags.some(tag => item.tags.includes(tag)));
+
+      const matchesLoginRequired = activeFilters.login_required.length === 0 || 
+        activeFilters.login_required.some(filter => {
+          if (filter.toLowerCase() === 'yes') {
+            return item.login_required === true || item.login_required === 'yes' || item.login_required === 'y';
+          } else {
+            return !item.login_required || item.login_required === false || item.login_required === 'no' || item.login_required === 'n';
+          }
+        });
         
-      return matchesStatus && matchesCost && matchesPlatform && matchesTags;
+      return matchesCost && matchesPlatform && matchesTags && matchesLoginRequired;
     });
   }
 
