@@ -4,10 +4,15 @@
 
 ### Set up monitoring apps
 
-- Credit Karma: [creditkarma.com](https://www.creditkarma.com)
+It is easier to do these before you freeze your credit in the later steps.
+
+- Install Credit Karma: [creditkarma.com/credit/i/credit-karma-app](https://www.creditkarma.com/credit/i/credit-karma-app)
     - Free alerts and score tracking for TransUnion and Equifax.
-- Experian app: [experian.com/mobile](https://www.experian.com/mobile)
+- Install the Experian app: [experian.com/mobile](https://www.experian.com/mobile)
     - Access to Experian report and a real FICO score.
+- Bookmark [AnnualCreditReport.com](https://www.annualcreditreport.com/index.action)
+    - Despite the name, this site now gives free reports *weekly* from all three major bureaus (Experian, Equifax, TransUnion).  
+    - Use it for full report checks in addition to app-based monitoring.
 
 ### Secure Social Security account
 
@@ -31,11 +36,8 @@ Only temporarily unfreeze if you are:
 
 Always freeze it back immediately after. Use the same links above to unfreeze and refreeze.
 
-### Annual checks (repeat every year)
+### Renew fraud alerts annually
 
-- Use the freeze links in "[Freeze all credit reports](#freeze-all-credit-reports)" to temporarily unfreeze, then:
-    - Annual reports: [annualcreditreport.com](https://www.annualcreditreport.com/index.action)
-        - Lets you review all 3 credit reports for errors or fraud once a year.
 - Renew fraud alerts (expire after 1 year):
     - Equifax Fraud Alert: [equifax.com/personal/credit-report-services/credit-fraud-alerts](https://www.equifax.com/personal/credit-report-services/credit-fraud-alerts/)
         - Requires lenders to verify your identity before opening new credit. Equifax notifies TransUnion and Experian automatically.
