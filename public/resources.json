@@ -5627,9 +5627,9 @@
         "url": "https://browserleaks.com/"
       },
       {
-        "name": "Self-Destructing Cookies (T)",
+        "name": "Cookie AutoDelete (T)",
         "type": "url",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/"
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/"
       },
       {
         "name": "BrowserSpy.dk",
