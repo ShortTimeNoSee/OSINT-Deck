@@ -4,6 +4,7 @@
   import NavPanel from './components/NavPanel.svelte';
   import ResourceGrid from './components/ResourceGrid.svelte';
   import Breadcrumb from './components/Breadcrumb.svelte';
+  import { applyFilters as filterItems } from './lib/filters.js';
 
   let data = null;
   let currentPath = [];
@@ -60,10 +61,7 @@
     login_required: activeFilters.login_required
   };
 
-  $: filteredItems = (() => {
-    const _ = activeFilterState;
-    return applyFilters(currentItems);
-  })();
+  $: filteredItems = filterItems(currentItems, activeFilterState);
 
   $: hasActiveFilters = Object.values(activeFilters).some(filters => filters.length > 0);
 
@@ -153,38 +151,6 @@
     });
     
     return deduplicatedResults.map(result => result.item);
-  }
-
-  function applyFilters(items) {
-    if (!items) return [];
-    
-    const hasActiveFilters = Object.values(activeFilters).some(filters => filters.length > 0);
-    if (!hasActiveFilters) return items;
-    
-    return items.filter(item => {
-      if (item.node) item = item.node;
-      if (item.type === 'folder') return true;
-        
-      const matchesCost = activeFilters.cost.length === 0 || 
-        (item.cost && activeFilters.cost.includes(item.cost.toLowerCase()));
-        
-      const matchesPlatform = activeFilters.platform.length === 0 || 
-        (item.platform && activeFilters.platform.includes(item.platform.toLowerCase()));
-        
-      const matchesTags = activeFilters.tags.length === 0 || 
-        (item.tags && activeFilters.tags.some(tag => item.tags.includes(tag)));
-
-      const matchesLoginRequired = activeFilters.login_required.length === 0 || 
-        activeFilters.login_required.some(filter => {
-          if (filter.toLowerCase() === 'yes') {
-            return item.login_required === true || item.login_required === 'yes' || item.login_required === 'y';
-          } else {
-            return !item.login_required || item.login_required === false || item.login_required === 'no' || item.login_required === 'n';
-          }
-        });
-        
-      return matchesCost && matchesPlatform && matchesTags && matchesLoginRequired;
-    });
   }
 
   function navigateToCategory(categoryNode) {
