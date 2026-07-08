@@ -52,13 +52,29 @@ export function itemMatchesFilters(item, filters) {
   return matchesCost && matchesPlatform && matchesTags && matchesLoginRequired(item, filters);
 }
 
+export function folderHasMatchingDescendants(folder, filters) {
+  if (!folder?.children?.length) return false;
+
+  return folder.children.some((child) => {
+    if (child.type === 'folder') {
+      return folderHasMatchingDescendants(child, filters);
+    }
+
+    return itemMatchesFilters(child, filters);
+  });
+}
+
 export function applyFilters(items, filters) {
   if (!items) return [];
   if (!hasActiveFilters(filters)) return items;
 
   return items.filter((item) => {
     const node = getNode(item);
-    if (node.type === 'folder') return true;
+
+    if (node.type === 'folder') {
+      return folderHasMatchingDescendants(node, filters);
+    }
+
     return itemMatchesFilters(node, filters);
   });
 }
