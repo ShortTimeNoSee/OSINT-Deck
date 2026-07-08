@@ -3875,9 +3875,9 @@
       "type": "folder",
       "children": [
       {
-        "name": "Databases.Today",
+        "name": "Snus Base",
         "type": "url",
-        "url": "https://databases.today/"
+        "url": "https://snusbase.com/"
       },
       {
         "name": "Cryptome",
