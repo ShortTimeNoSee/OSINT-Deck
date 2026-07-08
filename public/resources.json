@@ -5817,11 +5817,6 @@
       "type": "folder",
       "children": [
       {
-        "name": "A Google A Day",
-        "type": "url",
-        "url": "http://www.agoogleaday.com/"
-      },
-      {
         "name": "GeoGuesser",
         "type": "url",
         "url": "https://geoguessr.com/"
@@ -5836,11 +5831,6 @@
       "name": "Forensic OSINT KB Guides",
       "type": "url",
       "url": "https://www.forensicosint.com/osint-guide"
-    },
-    {
-      "name": "AutomatingOSINT.com",
-      "type": "url",
-      "url": "http://register.automatingosint.com/"
     },
     {
       "name": "Open Source Intelligence Techniques",
