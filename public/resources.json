@@ -2403,7 +2403,7 @@
     {
       "name": "Numspy (T)",
       "type": "python3 Module",
-      "url": "https://bhattsameer.github.io/numspy"
+      "url": "https://pypi.org/project/numspy/"
     },
     {
       "name": "Numspy-Api",
