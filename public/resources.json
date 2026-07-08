@@ -2908,11 +2908,6 @@
         "name": "TRAVIC - Public Transportation Tracking",
         "type": "url",
         "url": "http://tracker.geops.ch/"
-      },
-      {
-        "name": "Vehicle History and VIN Check",
-        "type": "url",
-        "url": "https://www.vehiclehistory.com/"
       }]
     },
     {
