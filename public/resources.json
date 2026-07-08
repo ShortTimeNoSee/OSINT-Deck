@@ -3900,9 +3900,9 @@
       "type": "folder",
       "children": [
       {
-        "name": "Labled Faces in the Wild DB",
+        "name": "Labeled Faces in the Wild DB",
         "type": "url",
-        "url": "http://vis-www.cs.umass.edu/lfw/"
+        "url": "https://www.kaggle.com/datasets/jessicali9530/lfw-dataset"
       },
       {
         "name": "VisualGenome",
