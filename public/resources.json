@@ -4382,11 +4382,6 @@
       }]
     },
     {
-      "name": "Tor2web",
-      "type": "url",
-      "url": "https://tor2web.org/"
-    },
-    {
       "name": "Web O Proxy",
       "type": "url",
       "url": "https://weboproxy.com/"
