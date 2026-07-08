@@ -2600,6 +2600,12 @@
       "type": "folder",
       "children": [
       {
+        "name": "VoteRef",
+        "type": "url",
+        "url": "https://voteref.com/",
+        "description": "US Voter Records"
+      },
+      {
         "name": "Voter Records",
         "type": "url",
         "url": "https://voterrecords.com/"
