@@ -320,10 +320,9 @@
     </div>
 
     <ResourceGrid 
-      {filteredItems} 
-      {searchTerm} 
+      {filteredItems}
+      {searchTerm}
       {hasActiveFilters}
-      unfilteredItems={currentItems}
       on:resourceClick={(e) => handleResourceClick(e.detail)} 
       on:copyUrl={handleCopyUrl} 
       on:openReportModal={openReportModal}

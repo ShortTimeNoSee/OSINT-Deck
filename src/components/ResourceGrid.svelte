@@ -4,22 +4,8 @@
   export let filteredItems = [];
   export let searchTerm = "";
   export let hasActiveFilters = false;
-  export let unfilteredItems = [];
 
   const dispatch = createEventDispatcher();
-
-  $: hasNonFolderItems = unfilteredItems.some(item => {
-    const node = item.node || item;
-    return node.type !== 'folder';
-  });
-
-  $: hasVisibleFolders = filteredItems.some(item => {
-    const node = item.node || item;
-    return node.type === 'folder';
-  });
-
-  $: showFilterMessage = hasActiveFilters && hasNonFolderItems && 
-    (hasVisibleFolders || filteredItems.length === 0);
 
   function onCardClick(item) {
      const payload = item.node ? item : { node: item, path: null };
@@ -198,11 +184,11 @@
      <p style="color: var(--text-muted); grid-column: 1 / -1; text-align: center; margin-top: 2rem;">
          No results found for "{searchTerm}". Try different keywords?
      </p>
-   {:else if filteredItems.every(item => (item.node || item).type === 'folder') && hasNonFolderItems && hasActiveFilters}
+   {:else if filteredItems.length === 0 && hasActiveFilters}
       <div style="color: var(--text-muted); grid-column: 1 / -1; text-align: center; margin-top: 2rem;">
         <p>There are no items matching your current filters.</p>
-        <button 
-          class="clear-filters-button" 
+        <button
+          class="clear-filters-button"
           on:click={() => dispatch('clearFilters')}
           style="background: none; border: none; color: var(--accent); text-decoration: underline; cursor: pointer; padding: 0.5rem; margin-top: 0.5rem; font: inherit;">
           Clear all filters
