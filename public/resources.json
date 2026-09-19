@@ -2876,6 +2876,19 @@
       "type": "folder",
       "children": [
       {
+        "name": "Currawong China USCI / USCC Checker",
+        "type": "url",
+        "url": "https://currawongweb.com/verify/china-usci-checker/",
+        "description": "Checks the structure and check digit of an 18-character Chinese organisation code in the browser. Does not query a registry or verify a company.",
+        "tags": [
+          "China",
+          "company research",
+          "identifier"
+        ],
+        "cost": "free",
+        "platform": "web"
+      },
+      {
         "name": "RBA - Business Information Resources",
         "type": "url",
         "url": "http://www.rba.co.uk/sources/"
