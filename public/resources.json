@@ -2662,6 +2662,15 @@
       "url": "http://publicrecords.searchsystems.net/"
     },
     {
+      "name": "SanctionsKit public-source search",
+      "type": "url",
+      "url": "https://www.sanctionskit.com/search",
+      "description": "Search names and aliases in available public sanctions and watchlist records, with links to source evidence. Public lookup is free; paid screening is separate. A shared name does not establish identity or legal clearance. Search terms appear in the URL and browser history.",
+      "tags": ["sanctions", "public records", "name search"],
+      "cost": "free",
+      "platform": "web"
+    },
+    {
       "name": "The World Bank Open Data Catalog",
       "type": "url",
       "url": "http://datacatalog.worldbank.org/"
