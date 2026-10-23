@@ -5407,6 +5407,16 @@
       "name": "REScure Cyber Threat Intelligence Project",
       "type": "url",
       "url": "https://rescure.me/feeds.html"
+    },
+    {
+      "name": "ICHI — Internet Cyber Health Index",
+      "type": "url",
+      "url": "https://ichi.global/",
+      "description": "Free daily cyber-health barometer aggregating threat feeds, vulnerability databases, and network monitoring signals into a directional outside-in index. Source-transparent; not a predictive forecast or organization-specific risk score.",
+      "cost": "free",
+      "platform": "web",
+      "tags": ["threat-intelligence", "cyber-health", "aggregator"],
+      "status": "active"
     }]
   },
   {
